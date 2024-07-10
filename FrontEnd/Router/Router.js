@@ -2,7 +2,7 @@ import Route from "./Route.js";
 import { allRoutes, websiteName } from "./allRoutes.js";
 
 // Création d'une route pour la page 404 (page introuvable)
-const route404 = new Route("404", "Page introuvable", "/FrontEnd/pages/404.html");
+const route404 = new Route("404", "Page introuvable", "/FrontEnd/pages/404.html", []);
 
 // Fonction pour récupérer la route correspondant à une URL donnée
 const getRouteByUrl = (url) => {
@@ -26,6 +26,28 @@ const LoadContentPage = async () => {
   const path = window.location.pathname;
   // Récupération de l'URL actuelle
   const actualRoute = getRouteByUrl(path);
+  
+  //Vérifier les droits d'accès à la page
+  const allRolesArray = actualRoute.authorize;
+
+  if(allRolesArray.length > 0){
+    if(allRolesArray.includes("connected")){
+      if(isConnected()){
+        window.location.replace("/FronEnd/accueil");
+      }
+    }
+    else{
+      const roleAdmin = getRole();
+      if(!allRolesArray.includes(roleAdmin)){
+        window.location.replace("/FrontEnd/accueil");
+      }
+      const roleVeterinaire = getRole();
+      if(!allRolesArray.includes(roleVeterinaire)){
+        window.location.replace("/FrontEnd/accueil")
+      }
+    }
+    
+  }
   // Récupération du contenu HTML de la route
   const html = await fetch(actualRoute.pathHtml).then((data) => data.text());
   // Ajout du contenu HTML à l'élément avec l'ID "main-page"
@@ -44,6 +66,10 @@ const LoadContentPage = async () => {
 
   // Changement du titre de la page
   document.title = actualRoute.title + " - " + websiteName;
+
+  //afficher les éléments en fonction du roles 
+  ShowAndHideForRoles();
+
 };
 
 // Fonction pour gérer les événements de routage (clic sur les liens)

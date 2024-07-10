@@ -43,7 +43,7 @@
             <div class="text-container-animaux">
                 <h2 class="list-title">Liste des animaux dans l'habitats</h2>
                 <div class="list-item">
-                    <img src="/images/iamges/2.png" class="list-item-image" alt="Lioness">
+                    <button type="button"  data-bs-toggle="modal" data-bs-target="#animauxModal" style="background-color: #292222;"><img src="/images/iamges/2.png" class="list-item-image" alt="Lioness"></button>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
             <div class="text-container-animaux">
                 <h2 class="list-title">Liste des animaux dans l'habitats</h2>
                 <div class="list-item">
-                    <img src="/images/iamges/20.jpg" class="list-item-image" alt="hairon">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#animauxModal" style="background-color: #292222;"><img src="/images/iamges/20.jpg" class="list-item-image" alt="hairon"></button>
                 </div>
             </div>
         </div>
@@ -81,14 +81,37 @@
             <div class="text-container-animaux">
                 <h2 class="list-title">Liste des animaux dans l'habitats</h2>
                 <div class="list-item">
-                    <img src="/images/iamges/4.png" class="list-item-image" alt="serpent">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#animauxModal" style="background-color: #292222;"><img src="/images/iamges/4.png" class="list-item-image" alt="serpent"></button>
                 </div>
             </div>
         </div>
     </div>
-
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#animauxModal">
+        Ouvrir la modale
+    </button>
+    <div class="modal" tabindex="-1" id="animauxModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Titre de la modale</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+              <p>Contenu de la modale.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+              <button type="button" class="btn btn-primary">Sauvegarder les modifications</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <br>
     <br>
     <br>
     <br>
 </section>
+
+
+
+  

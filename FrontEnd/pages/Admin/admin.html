@@ -1,0 +1,62 @@
+<section>
+    <div class='hero-scene text-center text-white'>
+        <div class='hero-scene-content'>
+            
+            
+            <h1 style="font-family: Cormorant Upright;">Espace Administrateur</h1>
+    
+        </div>
+    </div>
+    
+    <div>
+        <h1>Créer un compte</h1>
+        <div class="container container-inscription">
+            <form id="formulaireInscription">
+                <div class="mb-3">
+                    <label for="NomInput" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="NomInput" placeholder="Votre nom" name="Nom"> 
+                    <div class="invalid-feedback">
+                        Le nom est requis
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="PrenomInput" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" id="PrenomInput" placeholder="Votre prénom" name="Prenom"> 
+                    <div class="invalid-feedback">
+                        Le prénom est requis
+                    </div>
+                </div>
+                <div class="mb-3">
+                  <label for="EmailInput" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="EmailInput" placeholder="test@mail.fr" name="Email"> 
+                  <div class="invalid-feedback">
+                    Le mail n'est pas au bon format
+                </div>
+                </div>
+                <div class="mb-3">
+                  <label for="PasswordInput" class="form-label">Mot de passe</label>
+                  <input type="password" class="form-control" id="PasswordInput" name="Password">
+                  <div class="invalid-feedback">
+                    Votre mdp est invalide , il doit être composer d'au moins 8 caractères dont 1 majuscule et 1 minuscule , d'un chiffre et d'un caractère spécial
+                  </div>
+                  <div class="valid-feedback">
+                    Votre mot de passe est robuste
+                  </div>
+                </div>
+                <div class="mb-3">
+                    <label for="ValidatePasswordInput" class="form-label">Validez votre mot de passe</label>
+                    <input type="password" class="form-control" id="ValidatePasswordInput" name="PasswordConfirm">
+                    <div class="invalid-feedback">
+                        Les mdp saisies ne sont pas identiques
+                      </div>
+                  </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary" id="btn-validation-inscription">Créer</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</section>
+<br>
+<br>

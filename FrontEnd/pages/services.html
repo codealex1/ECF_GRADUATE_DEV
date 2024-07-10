@@ -1,4 +1,4 @@
-<section>
+<section style="background-color: #292222;">
     <div class='hero-scene text-center text-white'>
         <div class='hero-scene-content'>
             
@@ -7,32 +7,78 @@
     
         </div>
     </div>
-    
-    <div class="container-services black">
-        <div class="container-services-card">
-            <h1 style="color: #FCCA18; font-family: Cormorant Upright;">Restauration</h1>
-            <div class="image-container">
-                <img src="/images/iamges/6.png" alt="table" class="img-services">
+    <br>
+    <br>
+    <div class="container black">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditionModal" data-show="admin" >
+            Ajouter un service
+        </button>
+        
+        <div class="container-services black">
+            <div class="container-services-card">
+                <h1 style="color: #FCCA18; font-family: Cormorant Upright;">Restauration</h1>
+                <div class="image-container">
+                    <img src="/images/iamges/6.png" alt="table" class="img-services">
+                </div>
+                <p class="card-text">
+                    Venez profiter d'une game de repas variées et soutenez ainsi des producteurs locaux soucieux de l'environnemnt
+                </p>
             </div>
-            <p class="card-text">
-                Venez profiter d'une game de repas variées et soutenez ainsi des producteurs locaux soucieux de l'environnemnt
-            </p>
+        </div>
+        <div class="container-services black">
+            <div class="container-services-card">
+                <h1 style="color: #FCCA18; font-family: Cormorant Upright;">Venez vivre une expérience unique et conviviale en famille grâce à nos guides :</h1>
+                <div class="image-container">
+                    <img src="/images/iamges/5.png" alt="table" class="img-services">
+                </div>
+            </div>
+        </div>
+        <div class="container-services black">
+            <div class="container-services-card">
+                <h1 style="color: #FCCA18; font-family: Cormorant Upright;">Optez pour l’aventure et embarquer à bord du Arcadia Express pour une visite pitoresque</h1>
+                <div class="image-container">
+                    <img src="/images/iamges/7.png" alt="table" class="img-services">
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container-services black">
-        <div class="container-services-card">
-            <h1 style="color: #FCCA18; font-family: Cormorant Upright;">Venez vivre une expérience unique et conviviale en famille grâce à nos guides :</h1>
-            <div class="image-container">
-                <img src="/images/iamges/5.png" alt="table" class="img-services">
+
+    <!-- Modal edition -->
+    <div class="modal fade" id="EditionModal" tabindex="-1" aria-labelledby="EditionPhotoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Ajouter un service </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="form-service">
+                    <div class="mb-3">
+                        <label for="NamePhotoInput" class="form-label">Titre</label>
+                        <input type="text" class="form-control" id="NamePhotoInput" placeholder="Petit Train" name="Titre"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="ImageInput" class="form-label">Image</label>
+                        <input type="file" class="form-control" id="ImageInput"  name="Image">
+                    </div>
+                    <div class="mb-3">
+                        <label for="DescriptionInput" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="NamePhotoInput" placeholder="Petit Train" name="description"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="ouvertureInput" class="form-label">Heure d'ouverture</label>
+                        <input type="text" class="form-control" id="NamePhotoInput"  name="ouverture"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="FermetureInput" class="form-label">Heure de fermeture </label>
+                        <input type="text" class="form-control" id="NamePhotoInput"  name="fermeture"> 
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" id="btn_service">Enregistrer</button>
+                    </div>
+                </form>
             </div>
         </div>
-    </div>
-    <div class="container-services black">
-        <div class="container-services-card">
-            <h1 style="color: #FCCA18; font-family: Cormorant Upright;">Optez pour l’aventure et embarquer à bord du Arcadia Express pour une visite pitoresque</h1>
-            <div class="image-container">
-                <img src="/images/iamges/7.png" alt="table" class="img-services">
-            </div>
         </div>
     </div>
 </section>

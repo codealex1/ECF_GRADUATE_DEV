@@ -12544,7 +12544,7 @@ input[type=submit]:hover {
   font-size: 16px;
 }
 
-.contact-form input[type=submit] {
+.contact-form button[type=button] {
   background-color: #B0851A; /* Couleur du bouton */
   color: #FFF;
   padding: 10px 20px;
@@ -12555,6 +12555,67 @@ input[type=submit]:hover {
   transition: background-color 0.3s ease;
 }
 
-.contact-form input[type=submit]:hover {
+.contact-form button[type=button]:hover {
   background-color: #8F6B15; /* Couleur du bouton au survol */
+}
+
+.connexion-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 300px;
+}
+
+.connexion-form {
+  background-color: #3F6B3A; /* Couleur de fond du formulaire */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 200%;
+  max-width: 800px;
+  color: #FFF; /* Couleur du texte */
+  text-align: center;
+}
+
+.connexion-form h2, .connexion-form .h2 {
+  margin-bottom: 20px;
+  font-family: "Georgia", serif;
+}
+
+.connexion-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-family: "Georgia", serif;
+}
+
+.connexion-form input[type=text],
+.connexion-form input[type=email],
+.connexion-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.connexion-form input[type=submit] {
+  background-color: #B0851A; /* Couleur du bouton */
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.connexion-form button[type=submit]:hover {
+  background-color: #8F6B15; /* Couleur du bouton au survol */
+}
+
+.container-inscription {
+  border: #000;
 }/*# sourceMappingURL=main.css.map */
