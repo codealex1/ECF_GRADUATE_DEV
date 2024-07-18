@@ -12052,7 +12052,6 @@ p {
 .image-card {
   position: relative;
 }
-.image-card:hover .titre-image,
 .image-card:hover .action-image-buttons {
   opacity: 1;
 }
@@ -12309,7 +12308,7 @@ textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+.btn-avis[type=button] {
   display: block;
   width: 100%;
   padding: 10px;
@@ -12322,7 +12321,7 @@ input[type=submit] {
   transition: background-color 0.3s ease;
 }
 
-input[type=submit]:hover {
+.btn-avis[type=button]:hover {
   background-color: #45a049;
 }
 
@@ -12535,6 +12534,7 @@ input[type=submit]:hover {
 
 .contact-form input[type=text],
 .contact-form input[type=email],
+.contact-form input[type=date],
 .contact-form textarea {
   width: 100%;
   padding: 10px;
@@ -12618,4 +12618,181 @@ input[type=submit]:hover {
 
 .container-inscription {
   border: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.img_ani {
+  width: 80%;
+  height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+  transition: transform 0.5s; /* ajout d'une transition pour le survol */
+}
+
+.container-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-rapport {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+}
+
+.container-rapport-card {
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  width: 600px;
+  max-width: 90%;
+}
+
+.filter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  width: 50%; /* adjust the width to your liking */
+  background-color: #333; /* dark background to make the white text stand out */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.filter-form label {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.filter-form input[type=date], .filter-form input[type=number] {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+.filter-form button[type=submit] {
+  width: 100%;
+  height: 40px;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.filter-form button[type=submit]:hover {
+  background-color: #3e8e41;
+}
+
+.animal-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.animal-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(20% - 10px);
+  margin: 10px;
+}
+
+.animal-card img {
+  width: 100%;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.animal-info {
+  padding: 10px;
+}
+
+.animal-info h2, .animal-info .h2 {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.animal-info p {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .animal-card {
+    width: calc(30% - 10px);
+  }
+}
+.ali-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.ali-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(20% - 10px);
+  margin: 10px;
+}
+
+.ali-card img {
+  width: 100%;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.ali-info {
+  padding: 10px;
+}
+
+.ali-info h2, .ali-info .h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.ali-info p {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .ali-card {
+    width: calc(30% - 10px);
+  }
 }/*# sourceMappingURL=main.css.map */

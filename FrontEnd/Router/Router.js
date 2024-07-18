@@ -45,6 +45,10 @@ const LoadContentPage = async () => {
       if(!allRolesArray.includes(roleVeterinaire)){
         window.location.replace("/FrontEnd/accueil")
       }
+      const roleEmploye = getRole();
+      if(!allRolesArray.includes(roleEmploye)){
+        window.location.replace("/FrontEnd/accueil")
+      }
     }
     
   }

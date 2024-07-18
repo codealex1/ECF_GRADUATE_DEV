@@ -43,7 +43,7 @@
             <div class="text-container-animaux">
                 <h2 class="list-title">Liste des animaux dans l'habitats</h2>
                 <div class="list-item">
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#animauxModal" style="background-color: #292222;"><img src="/images/iamges/2.png" class="list-item-image" alt="Lioness"></button>
+                    <button type="button"  data-bs-toggle="modal" data-bs-target="#animauxModal" style="background-color: #292222;" onclick="ClickIncrement(1)"><img src="/images/iamges/2.png" class="list-item-image" alt="Lioness"></button>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
             <div class="text-container-animaux">
                 <h2 class="list-title">Liste des animaux dans l'habitats</h2>
                 <div class="list-item">
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#animauxModal" style="background-color: #292222;"><img src="/images/iamges/20.jpg" class="list-item-image" alt="hairon"></button>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#animauxModal2" style="background-color: #292222;"onclick="ClickIncrement(2)"><img src="/images/iamges/20.jpg" class="list-item-image" alt="hairon"></button>
                 </div>
             </div>
         </div>
@@ -81,28 +81,56 @@
             <div class="text-container-animaux">
                 <h2 class="list-title">Liste des animaux dans l'habitats</h2>
                 <div class="list-item">
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#animauxModal" style="background-color: #292222;"><img src="/images/iamges/4.png" class="list-item-image" alt="serpent"></button>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#animauxModal3" style="background-color: #292222;"onclick="ClickIncrement(3)"><img src="/images/iamges/4.png" class="list-item-image" alt="serpent"></button>
                 </div>
             </div>
         </div>
     </div>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#animauxModal">
-        Ouvrir la modale
-    </button>
     <div class="modal" tabindex="-1" id="animauxModal">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Titre de la modale</h5>
+              <h5 class="modal-title">Simba</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
             </div>
-            <div class="modal-body">
-              <p>Contenu de la modale.</p>
+            <div class="modal-body" >
+                <img src="/images/iamges/2.png" class="list-item-image" alt="Lioness">
+                <p style="font-family: Cormorant upright">Race : Lion</p>
+                <p style="font-family: Cormorant upright">Etat : Bon</p>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-              <button type="button" class="btn btn-primary">Sauvegarder les modifications</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="animauxModal2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Syphon</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
             </div>
+            <div class="modal-body" >
+                <img src="/images/iamges/20.jpg" class="list-item-image" alt="Lioness">
+                <p style="font-family: Cormorant upright">Race : Hairon</p>
+                <p style="font-family: Cormorant upright">Etat : Bon</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="animauxModal3">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Jimbe</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body" >
+                <img src="/images/iamges/4.png" class="list-item-image" alt="Lioness">
+                <p style="font-family: Cormorant upright">Race : Cobra</p>
+                <p style="font-family: Cormorant upright">Etat : Bon</p>
+            </div>
+            
           </div>
         </div>
       </div>

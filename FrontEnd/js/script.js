@@ -64,12 +64,12 @@ function ShowAndHideForRoles(){
     allElementsToEdit.forEach(element =>{
         switch(element.dataset.show){
             case 'sante':
-                if(!userConnected || role!="veterinaire"){
+                if(!userConnected || role!="ROLE_VETERINAIRE"){
                     element.classList.add("d-none");
                 }
                 break;
             case 'employe':
-                if(!userConnected || role!="employe"){
+                if(!userConnected || role!="ROLE_EMPLOYE"){
                     element.classList.add("d-none");
                 }
                 break;
